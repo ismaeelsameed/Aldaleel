@@ -1897,13 +1897,16 @@ span.color-red {
   background-position: -50px 0;
 }
 #sequence > .sequence-canvas > li.bg1 {
-  background-image: url(../img/homepage-slider/banner_marketing_advertising_agency.jpg);
+  background-image: url(../img/homepage-slider/Guide_slide.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 #sequence > .sequence-canvas > li.bg2 {
-  background-image: url(../img/homepage-slider/slider-bg2.jpg);
+  background-image: url(../img/homepage-slider/slider2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #sequence > .sequence-canvas > li.bg3 {
   background-image: url(../img/homepage-slider/slider-bg3.jpg);
@@ -2122,7 +2125,7 @@ span.color-red {
 }
 .slide-img {
   left: 90%;
-  top: 20%;
+  top: 25%;
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
@@ -2132,7 +2135,7 @@ span.color-red {
   max-width: 45% !important;
 }
 .animate-in .slide-img {
-  left: 55%;
+  left: 12%;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;

@@ -175,5 +175,15 @@
 				</div>
 			</div>
 	    </div>
+
 	    <!-- End Our Clients -->
+{% endblock %}
+{% block javascript %}
+    <script>
+      $(document).ready(function () {
+        $(".mainmenu li").removeClass("active");//this will remove the active class from
+                                           //previously active menu item
+        $('#home').addClass('active');
+    });
+    </script>
 {% endblock %}
