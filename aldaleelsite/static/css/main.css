@@ -1474,7 +1474,7 @@ span.color-red {
 }
 .portfolio-item .read-more {
   text-align: center;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
 }
 .portfolio-item .portfolio-info-fade {
   -webkit-opacity: 0;
@@ -2370,7 +2370,6 @@ span.color-red {
 +	Main Menu Style
 --------------------------------------------------------------------------*/
 .mainmenu li.logo-wrapper a {
-  border-right: 1px solid #E8E8E8;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;

@@ -13,3 +13,7 @@ def companies(request, template_name='companies.html'):
 
 def about(request, template_name='about.html'):
     return render_to_response(template_name,context_instance=RequestContext(request))
+
+
+def company_details(request, template_name='page-product-details.html'):
+    return render_to_response(template_name,context_instance=RequestContext(request))
