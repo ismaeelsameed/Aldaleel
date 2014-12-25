@@ -16,6 +16,8 @@ class Company(models.Model):
     long_description = models.TextField()
     image = models.ImageField(upload_to='company_images')
     category = models.ForeignKey(Category, null=True, blank=False)
+    is_active = models.BooleanField(default=True)
+    is_promoted = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.name

@@ -11,7 +11,7 @@ def home(request, template_name='index.html'):
 
 
 def companies(request, template_name='companies.html'):
-    all_companies = Company.objects.all()
+    all_companies = Company.objects.filter(is_active=True)
     return render_to_response(template_name, {"companies": all_companies}, context_instance=RequestContext(request))
 
 
