@@ -9,190 +9,26 @@
 				</div>
 			</div>
 		</div>
-        
         <div class="section">
 	    	<div class="container">
 				<div class="row">
+                {% for company in companies %}
 					<div class="col-md-3 col-sm-6">
 						<div class="portfolio-item">
 							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio1.jpg" alt="Project Name"></a>
+								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ MEDIA_URL }}{{ company.image }}" alt="Project Name"></a>
 							</div>
 							<div class="portfolio-info-fade">
 								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
+									<li class="portfolio-project-name">{{ company.name }}</li>
+									<li>{{ company.category.english_name }}</li>
+									<li>{{ company.short_description }}</li>
 									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio2.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio3.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio4.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio5.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio6.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-                    					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio1.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio2.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio3.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio4.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio5.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ STATIC_URL }}img/portfolio6.jpg" alt="Project Name"></a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name">Project Name</li>
-									<li>Website design & Development</li>
-									<li>Client: Some Client LTD</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+                {% endfor %}
 				</div>
 			</div>
 		</div>
