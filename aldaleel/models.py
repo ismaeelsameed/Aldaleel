@@ -6,6 +6,9 @@ class Category(models.Model):
     english_name = models.CharField(max_length=255)
     arabic_name = models.CharField(max_length=255)
 
+    def __unicode__(self):
+        return self.english_name
+
 
 class Company(models.Model):
     name = models.CharField(max_length=255)
@@ -13,3 +16,6 @@ class Company(models.Model):
     long_description = models.TextField()
     image = models.ImageField(upload_to='company_images')
     category = models.ForeignKey(Category, null=True, blank=False)
+
+    def __unicode__(self):
+        return self.name
