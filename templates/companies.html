@@ -16,14 +16,14 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="portfolio-item">
 							<div class="portfolio-image">
-								<a href="{% url 'aldaleel.views.company_details' %}"><img src="{{ MEDIA_URL }}{{ company.image }}" alt="Project Name"></a>
+								<a href="{% url 'aldaleel.views.company_details' company.id %}"><img src="{{ MEDIA_URL }}{{ company.image }}" alt="Project Name"></a>
 							</div>
 							<div class="portfolio-info-fade">
 								<ul>
 									<li class="portfolio-project-name">{{ company.name }}</li>
 									<li>{{ company.category.english_name }}</li>
 									<li>{{ company.short_description }}</li>
-									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' %}" class="btn">Read more</a></li>
+									<li class="read-more"><a href="{% url 'aldaleel.views.company_details' company.id%}" class="btn">Read more</a></li>
 								</ul>
 							</div>
 						</div>
