@@ -26,7 +26,7 @@ class Company(models.Model):
         return self.english_name
 
 
-class Project(models):
+class Project(models.Model):
     name = models.CharField(max_length=255, default="", null=True, blank=False)
     address = models.CharField(max_length=255, default="", null=True, blank=False)
     area = models.CharField(max_length=255, default="", null=True, blank=False)
