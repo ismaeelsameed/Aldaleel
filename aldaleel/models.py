@@ -11,13 +11,15 @@ class Category(models.Model):
 
 
 class Company(models.Model):
-    name = models.CharField(max_length=255)
+    english_name = models.CharField(max_length=255, default="", null=True, blank=True)
+    arabic_name = models.CharField(max_length=255, default="", null=True, blank=True)
     short_description = models.CharField(max_length=255)
     long_description = models.TextField()
+    logo = models.ImageField(upload_to='company_logos', null=True, blank=True)
     image = models.ImageField(upload_to='company_images')
     category = models.ForeignKey(Category, null=True, blank=False)
     is_active = models.BooleanField(default=True)
     is_promoted = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return self.name
+        return self.english_name
