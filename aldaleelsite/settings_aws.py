@@ -21,11 +21,11 @@ CURRENT_PATH = os.path.abspath(os.path.dirname(__file__).decode('utf-8')).replac
 SECRET_KEY = 'c%@0=^tcm3+hfi8s@xi&h^rfbgm$lpj%&bvdd2m^c0r1%jjuo+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

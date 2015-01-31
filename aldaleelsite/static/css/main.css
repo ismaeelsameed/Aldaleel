@@ -2378,6 +2378,7 @@ span.color-red {
   background-color: #FFF;
   border-bottom: 4px solid #4f8db3;
   z-index: 4;
+  min-height: 90px;
 }
 .mainmenu {
   width: 100%;
@@ -2392,7 +2393,7 @@ span.color-red {
 }
 .mainmenu > ul,
 .mainmenu .mainmenu-submenu-inner {
-  margin: 0 auto;
+  margin: 8px auto;
 }
 .mainmenu > ul > li,
 .mainmenu .mainmenu-submenu-inner > li {
